@@ -129,6 +129,9 @@ div#left {
 	position: absolute;
 	width: 326px;
 }
+.InternetPackage #left{
+    bottom: 200px !important;
+}
 div#content {
 	height: auto;
 	margin: 20px 0;
@@ -534,7 +537,7 @@ div.container.PIN div.counter {
 div.container div.charge,div.container div.Bill {
 	display: none;
 }
-div.container.TopUp div.charge,div.container.PIN div.charge,div.container.WiMax div.charge {
+div.container.TopUp div.charge,div.container.PIN div.charge,div.container.WiMax div.charge{
 	display: block!important;
 }
 div.container.Bill div.Bill {
@@ -552,7 +555,7 @@ div.operators.Bill > div,div.operators.TrafficCard > div,div.operators.GiftCard 
 div.operators.GiftCard > div.MTN,div.operators.GiftCard > div.MCI,div.operators.GiftCard > div.RTL,div.operators.GiftCard > div.TAL {
 	display: none;
 }
-div.operators.InternetPackage > div.MTN, div.operators.InternetPackage > div.MCI, div.operators.InternetPackage > div.RTL, div.operators.InternetPackage > div.TAL {
+div.operators.InternetPackage > div.TAL {
 	display:none;
 }
 .irs {
@@ -695,7 +698,7 @@ table#bill-info td span.bill.mayoralty {
 table#bill-info td span.bill.police {
 	background: url(../img/bill-operators.png) no-repeat -288px 0;
 }
-.container.GiftCard > .GiftCard.operators,.TrafficCard.operators,.Bill.operators,.Antivirus.operators,.InternetPackage.operators {
+.container.GiftCard > .GiftCard.operators,.TrafficCard.operators,.Bill.operators,.Antivirus.operators {
 	height: 0;
 }
 .container .GiftCard {
@@ -1170,6 +1173,7 @@ div#content input#save-information{
 /* InternetPackage */
     .container.InternetPackage .InternetPackage {
         display:block;
+		width: 480px;
     }
     .container.InternetPackage .info .operator.InternetPackage {
         width:120px;
@@ -1178,7 +1182,7 @@ div#content input#save-information{
         cursor:default;
     }
     .container.InternetPackage .InternetPackage .buy {
-        display:none;
+        display:block;
     }
     .InternetPackage.operator {
         width:180px;
@@ -1238,8 +1242,8 @@ div#content input#save-information{
         height: 25px;
     }
     .InternetPackage .operators {
-        margin: 0 auto;
-        width: 380px;
+        /*margin: 0 auto;*/
+        width: 700px;
     }
     .operators.InternetPackage {
         height: 10px;
@@ -1268,8 +1272,14 @@ div#content input#save-information{
         height: 55px;
         width: 120px;
     }
-	.sim-type-container label:not(:last-child) {
-		margin-left: 20px;
+	.sim-type-container{
+		width: 300px;
+		display: inline-block;
+	}
+	.sim-type-container label{
+		float: right;
+		width: 150px;
+		text-align: right;
 	}
 /* End InternetPackage */
 
