@@ -394,7 +394,7 @@ div.payment-gateways {
 	text-align: right;
 	padding: 5px 60px;
 	display: inline-block;
-	width: 348px;
+	width: 220px !important;
 }
 div.payment-gateways p {
 	text-align: right;
@@ -405,7 +405,7 @@ div.payment-gateways p i {
 	margin: 0 5px;
 }
 div.payment-gateways ul {
-	width: 335px;
+	width: 335px !important;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -448,6 +448,9 @@ div.payment-gateways li.bank-Melli {
 div.payment-gateways li.bank-Fanava {
 	background-position: -180px -45px;
 }
+div.payment-gateways li.bank-Emtiyaz {
+	background-position: -270px -45px;
+}
 div.payment-gateways li.bank-Zarinpal {
 	background-position: -225px -45px;
 }
@@ -465,6 +468,9 @@ div.payment-gateways li.active.bank-Melli {
 }
 div.payment-gateways li.active.bank-Fanava {
 	background-position: -180px 0;
+}
+div.payment-gateways li.active.bank-Emtiyaz {
+	background-position: -270px 0;
 }
 div.payment-gateways li.active.bank-Zarinpal {
 	background-position: -225px 0;
