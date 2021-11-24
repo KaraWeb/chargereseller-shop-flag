@@ -70,7 +70,8 @@ div.container {
 }
 .operators {
 	width: 808px;
-	height: 100px;
+	height: auto;
+	max-height: 100px;
 	margin-top: 0;
 	z-index: 9999;
 }
@@ -394,7 +395,6 @@ div.payment-gateways {
 	text-align: right;
 	padding: 5px 60px;
 	display: inline-block;
-	width: 220px !important;
 }
 div.payment-gateways p {
 	text-align: right;
@@ -455,10 +455,10 @@ div.payment-gateways li.bank-Zarinpal {
 	background-position: -225px -45px;
 }
 div.payment-gateways li.active.bank-Default {
-	background-position: -314px 2px;
+	background-position: -315px 2px;
 }
 div.payment-gateways li.bank-Default {
-	background-position: -313px -43px;
+	background-position: -314px -43px;
 }
 div.payment-gateways li.active.bank-Parsian {
 	background-position: 0 0;
@@ -1192,13 +1192,6 @@ div#content input#save-information{
         float: right;
         display: inline-block;
     }
-    .InternetPackage .operators .operator:hover {
-       -webkit-transform: scale(1.1, 1.1);
-       -moz-transform: scale(1.1, 1.1);
-       -ms-transform: scale(1.1, 1.1);
-       -o-transform: scale(1.1, 1.1);
-       transform: scale(1.1, 1.1)
-    }
      .operator.IN-MTN-Hourly {
         background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll -180px 0px;
     }
@@ -1289,4 +1282,8 @@ input[type="radio"] {
 }
 .mx-200 {
 	max-width: 200px;
+}
+
+.no-products{
+	padding: 20vh 0 !important;
 }
